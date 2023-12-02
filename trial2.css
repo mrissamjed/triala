@@ -1,0 +1,83 @@
+/*
+difference between trial and trial 2 is in js files ( replace shop  by class) 
+if flex—direction == row
+justify-content => X
+align—items  => Y
+align—content => Y
+
+if flex-direction == column
+justify—content  => y 
+align—items  => X
+align—content => X
+*/
+body {
+    justify-content: space-around;
+    height: 100vh;
+}
+
+
+.class1,.class2,.class3 {
+    position: relative;
+    border: 5px  solid #36383d ;
+    border-radius: 5px; 
+    margin:10px;
+    display:flex;
+    flex-flow: row wrap;  
+    justify-content: space-between; /* space between every item */ 
+    /* border: solid rgb(189, 187, 187) */
+    /* background-color: aqua; */
+    /* flex-flow:row wrap;  */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* align-content:center; */
+    /* flex-direction: row; */
+    /* gap :10px */
+}
+    
+    button {
+    cursor: pointer;
+    height: 50px;
+    background-color: transparent;
+    font-size:20px;
+    width:200px;
+    margin-bottom: 5px;
+color:whitesmoke
+    
+    }
+    
+  
+ 
+#img1,#img2,#img3 {
+    border-radius: 20px;
+    width:240px;
+    height: 200px;
+    align-self: center; /* items are centred in y axes */
+    margin:10px
+ 
+}
+
+
+.img11,.img22,.img33  {
+
+    align-self: center; /* items are centred in y axes */ 
+    /* flex-shrink: 2; */
+transform: perspective(1000px) rotateX(-90deg);
+transition:0.5s;
+}
+
+.img11.active,.img22.active,.img33.active{
+transform: perspective(1000px) rotateX(0deg);
+
+}
+
+/* #img11{
+    flex-shrink: 1;
+}
+#img22{
+    flex-shrink: 1;
+}
+#img22{
+    flex-shrink: 1;
+} */
